@@ -7,4 +7,4 @@ At the homepage(http://hostname:8000) there will be two section that is create p
 User can input their details to submit their form to the server
 The input will be save in the database and will be output at the bottom of the form.
 The table(at the bottom of the form) will display all the details have been fill by the user.
-User can edit and delete the details by clicking at the 'Edit' and 'Delete' at the right of the row."# django-crud" 
+User can edit and delete the details by clicking at the 'Edit' and 'Delete' at the right of the row."

@@ -1,0 +1,7 @@
+<form action="/update/{{person.id}}/" method="post" id="create">
+    {%csrf_token%}
+    <table>
+    {{form}}
+    </table>
+    <button type="submit">Submit</button>
+</form>

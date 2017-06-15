@@ -1,0 +1,28 @@
+<form action="post_person/" method="post" id="create">
+    {%csrf_token%}
+    <table>
+    {{form}}
+    </table>
+    <button type="submit">Submit</button>
+</form>
+
+
+<table id="read">
+    <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>address</th>
+        <th></th>
+        <th></th>
+        
+    </tr>
+    {% for item in person %}
+    <tr>
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.address}}</td>
+        <td><a href="/update_person/{{item.id}}">Edit</a></td>
+        <td><a href="/delete/{{item.id}}">Delete</a></td>
+    </tr>
+    {%endfor%}
+</table>
